@@ -19,6 +19,11 @@ func main() {
 	router.GET("/tv/getPopular/:page", tv.GetPopular)
 
 	port := os.Getenv("PORT")
+
+	if port == "" {
+		port = "8080"
+	}
+
 	router.Run(":" + port)
 }
 
