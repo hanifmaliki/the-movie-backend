@@ -2,7 +2,7 @@ package main
 
 import (
 	"net/http"
-	"os"
+	// "os"
 	"the-movie-backend/movies"
 	"the-movie-backend/tv"
 
@@ -18,8 +18,9 @@ func main() {
 	router.GET("/tv/getTopRated/:page", tv.GetTopRated)
 	router.GET("/tv/getPopular/:page", tv.GetPopular)
 
-	port := os.Getenv("PORT")
-	router.Run(":" + port)
+	// port := os.Getenv("PORT")
+	// router.Run(":" + port)
+	router.Run(":8080")
 }
 
 func home(c *gin.Context) {
