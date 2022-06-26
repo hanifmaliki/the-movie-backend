@@ -18,8 +18,10 @@ func main() {
 	router.GET("/tv/getTopRated/:page", tv.GetTopRated)
 	router.GET("/tv/getPopular/:page", tv.GetPopular)
 
+	// For Heroku
 	port := os.Getenv("PORT")
 
+	// For local if not set env var
 	if port == "" {
 		port = "8080"
 	}

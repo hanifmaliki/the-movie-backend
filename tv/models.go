@@ -11,4 +11,5 @@ type TV struct {
 	FirstAirDate string  `json:"first_air_date"`
 	VoteAverage  float32 `json:"vote_average"`
 	PosterPath   string  `json:"poster_path"`
+	BackdropPath string  `json:"backdrop_path"`
 }
