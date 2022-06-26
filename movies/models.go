@@ -8,6 +8,7 @@ type MovieResponse struct {
 
 type Movie struct {
 	Title        string  `json:"title"`
+	Overview     string  `json:"overview"`
 	ReleaseDate  string  `json:"release_date"`
 	VoteAverage  float32 `json:"vote_average"`
 	PosterPath   string  `json:"poster_path"`

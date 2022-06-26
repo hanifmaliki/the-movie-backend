@@ -8,6 +8,7 @@ type TVResponse struct {
 
 type TV struct {
 	Name         string  `json:"name"`
+	Overview     string  `json:"overview"`
 	FirstAirDate string  `json:"first_air_date"`
 	VoteAverage  float32 `json:"vote_average"`
 	PosterPath   string  `json:"poster_path"`
